@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f0f0f0;
+        font-family: sans-serif;
+    }
+    .box{
+        width: 804px;
+        height: 436px;
+        flex-shrink: 0;
+        background: linear-gradient(218deg, #9181f4 -5.84%, #5038ed 106.73%);
+        border-radius: 9px;
+        display: flex;
+        flex-direction: row;
+        box-shadow: 0px 0px 20px #5038ed3d;
+        overflow: hidden;
+    }
+
+    .let_box, .right_box{
+        width: 50%;
+        height: 100%;
+    }
+
+    .let_box{
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        flex-direction: column;
+    }
+
+    .let_box h1{
+        margin-bottom: 12px;
+    }
+
+    .let_box p{
+        color: #717171;
+    }
+
+    .let_box form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 14px;
+    }
+
+    .let_box form .box_inp{
+        position: relative;
+    }
+
+    .let_box form .box_inp i{
+        position: absolute;
+        top: 13px;
+        left: 9px;
+    }
+
+    .let_box form input{
+        width: 17rem;
+        height: 39px;
+        border: none;
+        background: #e3e3e3;
+        border-radius: 9px;
+        padding-left: 33px;
+        margin-bottom: 12px;
+    }
+
+    .let_box form button{
+        border-radius: 9px;
+        background: linear-gradient(218deg, #9181f4 -5.84%, #5038ed 106.73%);
+        box-shadow: 0px 8px 21px 0px rgba(0, 0, 0, 0.16);
+        padding: 12px;
+        border: none;
+        cursor: pointer;
+        color: white;
+    }
+
+    .right_box{
+        background: url('./back.png');
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .right_box .box_center_img{
+        width: 14rem;
+        height: 17rem;
+        background-color: #9181f47a;
+        border-radius: 9px;
+        border: 2px solid #ffffff30;
+        position: absolute;
+    }
+
+    .right_box img{
+        position: absolute;
+        height: 21rem;
+        right: 19px;
+    }
+
+    .right_box .box_center_img p{
+        position: absolute;
+        color: #fff;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 34px;
+        width: 131px;
+        left: 19px;
+        top: 12px;
+    }
+
+    .right_box .box_center_img i{
+        position: absolute;
+        left: 73px;
+        top: 148px;
+        color: #e1e1e1;
+        font-size: 20px;
+    }
+
+    .right_box .box_center{
+        position: absolute;
+        left: 66px;
+        bottom: 131px;
+        width: 48px;
+        height: 48px;
+        background: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 27px;
+    }
+
+    @media (max-width: 812px) {
+        .right_box{
+            display: none;
+        }
+        .box{
+            width: 95%;
+        }
+        .let_box{
+            width: 100%;
+        }
+    }
+
+</style>
+
+<body>
+    <div class="box">
+        <div class="let_box">
+            <h1>Login</h1>
+            <p>How to i get started lorem ipsum dolor at?</p>
+            <form action="#">
+                <div class="box_inp">
+                    <i class="fi fi-rr-user"></i>
+                    <input type="email" name="email" placeholder="example@gmail.com">
+                </div>
+                <div class="box_inp">
+                    <i class="fi fi-rr-lock"></i>
+                    <input type="password" name="password" placeholder="password...">
+                </div>
+                <button type="submit">Login Now</button>
+            </form>
+        </div>
+        <div class="right_box">
+            <div class="box_center_img">
+                <p>Very good works are waiting for you Login Now!!!</p>
+                <i class="fi fi-rr-angle-double-left"></i>
+            </div>
+            <img src="./hinata.png" alt="img">
+            <div class="box_center">
+                &#129392;
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
